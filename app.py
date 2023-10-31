@@ -21,11 +21,11 @@ with gr.Blocks() as demo:
             image_output = gr.Image()
         image_Button = gr.Button("Flip Image")
 
-    with gr.Accordion("Open for More !"):
-        gr.Markdown("Look at me")
+    #with gr.Accordion("Open for More !"):
+    #    gr.Markdown("Look at me")
 
     text_Button.click(flip_text , inputs= text_Input , outputs=text_Output)
     image_Button.click(flip_image, inputs= image_input , outputs=image_output)
 
-demo.launch()
+demo.launch(share = true)
 

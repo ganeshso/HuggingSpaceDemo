@@ -27,5 +27,5 @@ with gr.Blocks() as demo:
     text_Button.click(flip_text , inputs= text_Input , outputs=text_Output)
     image_Button.click(flip_image, inputs= image_input , outputs=image_output)
 
-demo.launch(share = true)
+demo.launch(share = True)
 
